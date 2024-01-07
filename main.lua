@@ -1,6 +1,6 @@
 local frame = CreateFrame("FRAME", "WCLPerfFrame");
 frame:RegisterEvent("PLAYER_LOGIN");
-local partyMembers = {}
+partyMembers = {}
 
 -- 获取玩家基础信息
 local function GetInfo()
@@ -52,7 +52,7 @@ local function GetSelfWCLInfo()
 end
 
 -- 检查是否有新的团队成员加入
-local function CheckNewPartyMembers()
+function CheckNewPartyMembers()
     local numMembers = GetNumGroupMembers()
     for i = 1, numMembers do
         local name = GetRaidRosterInfo(i)
@@ -61,7 +61,7 @@ local function CheckNewPartyMembers()
             partyMembers[name] = true
             local info = GetWCLInfo(name)
             -- 向团队发送新成员加入的信息
-            local message = name
+            local message = ""
             local groupType = IsInRaid() and "RAID" or "PARTY"
             if info then
                 if info[1] then
@@ -73,9 +73,9 @@ local function CheckNewPartyMembers()
             end
             -- 如果 speech 为 true，则向团队发送信息,如果为false，则发送信息到自己的聊天框
             if speech then
-                SendChatMessage("欢迎" ..name.. "加入团队。" .. message, groupType)
+                SendChatMessage("["..addonName.."]" .. "欢迎" ..name.. "加入团队。" .. message, groupType)
             else
-                DEFAULT_CHAT_FRAME:AddMessage(noticeTitle .. message)
+                DEFAULT_CHAT_FRAME:AddMessage(noticeTitle .. name .. message)
             end
         end
     end

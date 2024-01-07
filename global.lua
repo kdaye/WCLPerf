@@ -1,9 +1,11 @@
-dataTime = "2024/01/07 19:27"
+dataTime = "2024/01/08 02:18"
 -- 软件名称
 addonName = "WCLPerf"
 -- 统一颜色
 titleColor = "|cff9933ff"
-textColor = "|r"
+textColor = "|cffFFFFFF"
+colorGreen = "|cff00ff00"
+colorRed = "|cffff0000"
 -- 统一开头
 noticeTitle = titleColor .. "[" .. addonName .."]" .. textColor
 -- 初始化 speech 和保存小地图按钮位置的变量
