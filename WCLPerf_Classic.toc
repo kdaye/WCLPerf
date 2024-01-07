@@ -1,8 +1,9 @@
 ## Interface: 11500
 ## Title: Warcraft Logs通报
 ## SavedVariables: savedVariables
-## Version: 1.0.1
+## Version: 1.0.3
 ## Author: 南明洞
+## OptionalDeps: LibDBIcon-1.0, LibDataBroker-1.1
 
 
 # Data of SoD

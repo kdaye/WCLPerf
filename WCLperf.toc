@@ -1,3 +1,0 @@
-## Interface: 00000
-## Title: WCLPerf|cFFFF0000 game client not supported|r
-## Notes: WCLPerf only supports SoD
