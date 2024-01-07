@@ -1,11 +1,3 @@
-## Interface: 90005
-## Title: Warcraft Logs通报
-## SavedVariables: savedVariables
-## Version: 1.0
-## Author: 南明洞
-
-
-Data\data.xml
-global.lua
-icon.lua
-main.lua
+## Interface: 00000
+## Title: WCLPerf|cFFFF0000 game client not supported|r
+## Notes: WCLPerf only supports SoD

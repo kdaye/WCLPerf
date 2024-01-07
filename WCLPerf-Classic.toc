@@ -1,0 +1,17 @@
+## Interface: 11500
+## Title: Warcraft Logs通报
+## SavedVariables: savedVariables
+## Version: 1.0.1
+## Author: 南明洞
+
+
+# Data of SoD
+Data\data.xml
+
+# config
+global.lua
+
+# Minimap icon
+icon.lua
+
+main.lua

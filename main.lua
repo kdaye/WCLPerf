@@ -85,6 +85,9 @@ local function OnPlayerLogin()
     -- 打印插件加载信息
     local message = "WCLPerf插件已加载"
     DEFAULT_CHAT_FRAME:AddMessage(noticeTitle .. message)
+    -- 打印插件数据库事件
+    local message = "数据库更新于" .. dataTime
+    DEFAULT_CHAT_FRAME:AddMessage(noticeTitle .. message)
     -- Register slash command to trigger printing region information
     SLASH_WCLPERF1 = "/wcl"
     SlashCmdList["WCLPERF"] = GetSelfWCLInfo

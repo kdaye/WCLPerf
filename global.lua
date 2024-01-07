@@ -1,3 +1,4 @@
+dataTime = "2024/01/07 19:27"
 -- 软件名称
 addonName = "WCLPerf"
 -- 统一颜色
